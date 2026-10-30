@@ -13,6 +13,7 @@ from dotenv import load_dotenv
 # تحميل التوكن من .env
 load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))
 
 # إعداد البوت
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode=None)
@@ -29,9 +30,6 @@ TEMP_DIR = "downloads"
 BANNED_USERS = []
 user_stats_file = "user_stats.json"
 banned_users_file = "banned_users.json"
-
-# تعيين ID الأدمن
-ADMIN_ID = 1443572090
 
 # إنشاء مجلد التنزيل المؤقت إذا لم يكن موجود
 if not os.path.exists(TEMP_DIR):
