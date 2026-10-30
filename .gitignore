@@ -1,0 +1,35 @@
+# Environment secrets
+.env
+.env.*
+
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Logs
+*.log
+
+# Telegram session files
+*.session
+*.session-journal
+
+# Downloaded media and temporary files
+downloads/
+temp/
+tmp/
+
+# Editor settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
